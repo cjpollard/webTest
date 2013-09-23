@@ -1,0 +1,32 @@
+#page {
+	width: 100%;
+	color: white;
+}
+
+#half {
+	width: 50%;
+	float: left;
+	background-color: blue;
+}
+
+.lower {
+	color: yellow!important;
+}
+
+#second {
+	width: 50%;
+	float: right;
+	background-color: green;
+}
+
+#quarter, #quarter3 {
+	width: 50%;
+	background-color: orange;
+	float: left;
+}
+
+#quarter2, #quarter4 {
+	width: 50%;
+	background-color: purple;
+	float: right;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <style type="text/css">
+        #wrapper {
+            height: 100px;
+            width: 100px;
+            display: block;
+            position: relative;
+        }
+        .dot {
+            width: 5px;
+            height: 5px;
+            opacity: 0;
+            position: relative;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .up {
+            margin-top: 40px;
+            margin-left: 60px;
+        }
+    </style>
+    <script type="text/javascript">
+        function animations() {
+            $('.down').animate({
+                opacity: 1,
+                left: "+=50",
+                top: "+=30"
+            }, 3000);
+            $('.up').animate({
+                opacity: 1,
+                right: "+=50",
+                bottom: "+=30"
+            }, 3000);
+            $('.grow').animate({
+                width: 15,
+                height: 15
+            });
+        }
+    </script>
+
+    <title></title>
+</head>
+<body onload=animations()>
+
+<div id="wrapper">
+    <div class="blue dot down"></div>
+    <div class="red dot up"></div>
+    <div class="green dot grow up"></div>
+</div>
+
+</body>
+</html>
